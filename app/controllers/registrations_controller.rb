@@ -1,6 +1,3 @@
-require "stripe"
-Stripe.api_key = "sk_test_as9RSSt1dqgBbGK6WkEPqOES"
-
 class RegistrationsController < Devise::RegistrationsController
   def create
     build_resource(sign_up_params)

@@ -81,4 +81,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.default_url_options = { :host => 'sandys-photo-app.herokuapp.com', :protocol => 'https'}
+  
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
+
 end
